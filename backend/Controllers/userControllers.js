@@ -42,6 +42,8 @@ const createAccount=async (req,res) => {
     return res
       .status(201)
       .json({ success: true, message: "Account created successfully!" ,user: userData});
+      
+
   } catch (error) {
     return res.status(500).json({
       success: false,
