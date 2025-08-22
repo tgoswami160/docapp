@@ -4,46 +4,86 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center mx-30">
-      <div className="flex justify-center mx-10 my-10 lg:gap-40 gap-18">
-        <div className="flex flex-col">
+    <footer className="w-full  ">
+      
+      <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-3 gap-8 ">
+        
+       
+        <div>
           <Link to="/home">
-            <img src={assets.logo} alt="logo" className="m-1 w-30 h-20" />
+            <img src={assets.logo} alt="logo" className="mb-4 w-36 h-auto" />
           </Link>
-          <p>
-            We are dedicated to making healthcare accessible and stress-free.
-            Our platform connects you with a network of experienced, verified
-            doctors, offering in-person and online consultations. Book
-            appointments in minutes and get the care you deserve — anytime,
-            anywhere.
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Making healthcare accessible and stress-free, our platform connects 
+            you with experienced, verified doctors.
           </p>
         </div>
 
-        <div className="flex flex-col pt-10">
-          <h5 className="text-2xl font-bold mb-4">Quick&nbsp;Links</h5>
-          <Link to="/home">Home</Link>
-          <Link to="/all-doctors">All Doctors</Link>
-          <Link to="/about-us">About Us</Link>
-          <Link to="/contact-us">Contact Us</Link>
+        
+        <div className="mt-10 ">
+          <h5 className="text-lg font-semibold text-gray-800 mb-4">Quick Links</h5>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li>
+              <Link to="/home" className="hover:text-blue-600 transition">Home</Link>
+            </li>
+            <li>
+              <Link to="/all-doctors" className="hover:text-blue-600 transition">All Doctors</Link>
+            </li>
+            <li>
+              <Link to="/about-us" className="hover:text-blue-600 transition">About Us</Link>
+            </li>
+            <li>
+              <Link to="/contact-us" className="hover:text-blue-600 transition">Contact Us</Link>
+            </li>
+          </ul>
         </div>
 
-        <div className="flex flex-col pt-10">
-          <h5 className="text-2xl font-bold mb-4">Get in touch</h5>
-          <a href="tel:+917217888531">+91-7217888531</a>
-          <a href="mailto:goswamit241@gmail.com">goswamit241@gmail.com</a>
-          <a
-            href="https://www.google.com/maps/place/Ghaziabad,+India"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            📍 Ghaziabad, India
-          </a>
+        
+        <div className="mt-10">
+          <h5 className="text-lg font-semibold text-gray-800 mb-4">Get in Touch</h5>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li>
+              <a href="tel:+917217888531" className="hover:text-blue-600 transition">
+                +91-7217888531
+              </a>
+            </li>
+            <li>
+              <a href="mailto:goswamit241@gmail.com" className="hover:text-blue-600 transition">
+                goswamit241@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Ghaziabad,+India"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-blue-600"
+              >
+                Uttar Pradesh, India
+              </a>
+            </li>
+          </ul>
+
+          
+          <div className="flex gap-4 mt-4">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src={assets.linkedinLogo} alt="LinkedIn" className="w-6 h-6 hover:scale-110 transition" />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src={assets.fbLogo} alt="Facebook" className="w-6 h-6 hover:scale-110 transition" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src={assets.instaLogo} alt="Instagram" className="w-6 h-6 hover:scale-110 transition" />
+            </a>
+          </div>
         </div>
       </div>
-      <div className="border-t-2 w-full text-center border-gray-300 mb-3 ">
-        <p className="p-4">© 2025 tanu123.dev — All Rights Reserved.</p>
+
+     
+      <div className="w-full text-center border-t border-gray-300 py-4 text-sm text-gray-500">
+        © 2025 <span className="font-medium">tanu123.dev</span> — All Rights Reserved.
       </div>
-    </div>
+    </footer>
   );
 };
 
