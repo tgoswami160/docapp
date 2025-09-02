@@ -32,8 +32,8 @@ const Login = () => {
     }
   };
   return (
-    <div className=" flex justify-center">
-      <div className="flex flex-col w-80 h-90 border mt-10 mb-10 p-5 gap-2 rounded-4xl ">
+    <div className=" flex justify-center bg-gradient-to-r from-blue-100 via-white to-blue-50">
+      <div className="flex flex-col w-80 h-90 mt-10 mb-10 p-5 gap-2 rounded-4xl bg-white shadow-2xl">
         <div>
           <h2 className="text-2xl text-center">Login</h2>
           <p className="text-sm text-center mb-4">
@@ -48,7 +48,7 @@ const Login = () => {
           value={email}
           id="email"
           placeholder="abc@gmail.com"
-          className="border-2 rounded border-gray-300 p-1"
+          className="border-2 rounded-md border-gray-300 p-1"
         />
         <label htmlFor="password">Password</label>
         <input
@@ -57,7 +57,7 @@ const Login = () => {
           value={password}
           id="password"
           placeholder="Enter your password"
-          className="border-2 rounded border-gray-300 p-1"
+          className="border-2 rounded-md border-gray-300 p-1"
         />
 
         <button

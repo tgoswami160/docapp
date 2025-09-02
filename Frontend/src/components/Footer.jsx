@@ -10,7 +10,7 @@ const Footer = () => {
         
        
         <div>
-          <Link to="/home">
+          <Link to="/home" onClick={() => window.scrollTo(0,0)}>
             <img src={assets.logo} alt="logo" className="mb-4 w-36 h-auto" />
           </Link>
           <p className="text-sm text-gray-600 leading-relaxed">
@@ -24,16 +24,16 @@ const Footer = () => {
           <h5 className="text-lg font-semibold text-gray-800 mb-4">Quick Links</h5>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
-              <Link to="/home" className="hover:text-blue-600 transition">Home</Link>
+              <Link to="/home" onClick={() => window.scrollTo(0,0)} className="hover:text-blue-600 transition">Home</Link>
             </li>
             <li>
-              <Link to="/all-doctors" className="hover:text-blue-600 transition">All Doctors</Link>
+              <Link to="/all-doctors" onClick={() => window.scrollTo(0,0)} className="hover:text-blue-600 transition">All Doctors</Link>
             </li>
             <li>
-              <Link to="/about-us" className="hover:text-blue-600 transition">About Us</Link>
+              <Link to="/about-us" onClick={() => window.scrollTo(0,0)} className="hover:text-blue-600 transition">About Us</Link>
             </li>
             <li>
-              <Link to="/contact-us" className="hover:text-blue-600 transition">Contact Us</Link>
+              <Link to="/contact-us" onClick={() => window.scrollTo(0,0)} className="hover:text-blue-600 transition">Contact Us</Link>
             </li>
           </ul>
         </div>

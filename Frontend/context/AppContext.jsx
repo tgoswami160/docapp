@@ -1,5 +1,6 @@
 
 import { createContext, useState } from "react";
+import { doctors } from "../src/assets/assets.js";
 
 export const AuthContext = createContext();
 
@@ -17,7 +18,7 @@ export const AuthProvider = ({ children }) => {
 
 
   return (
-    <AuthContext.Provider value={{ token, setToken, user, setUser }}>
+    <AuthContext.Provider value={{ token, setToken, user, setUser ,doctors}}>
       {children}
     </AuthContext.Provider>
   );

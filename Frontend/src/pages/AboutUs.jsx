@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="mx-auto max-w-7xl px-6 mb-10">
       
       <div className="py-16 text-center">
-        <h3 className="font-extrabold text-4xl text-gray-800 mb-6">About Us</h3>
+        <h3 className="font-extrabold text-4xl text-blue-500 mb-6">About Us</h3>
         <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-4">
           Welcome to{" "}
           <span className="font-semibold text-blue-500">MediCore</span>, your
@@ -33,7 +33,7 @@ const AboutUs = () => {
 
       
       <section className=" rounded-2xl p-12 ">
-        <h3 className="font-extrabold text-3xl text-center text-gray-800 mb-15">
+        <h3 className="font-extrabold text-3xl text-center text-blue-500 mb-15">
           Our Mission & Vision
         </h3>
         <div className="grid md:grid-cols-2 gap-8 text-gray-700 max-w-5xl mx-auto mb-10">
@@ -67,7 +67,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <h3 className="font-extrabold text-3xl text-center text-gray-800 mb-8">
+      <h3 className="font-extrabold text-3xl text-center text-blue-500 mb-8">
         Why Choose Us?
       </h3>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 p-4">

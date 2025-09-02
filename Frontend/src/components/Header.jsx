@@ -12,20 +12,19 @@ const Header = () => {
     useEffect(navigate('/all-doctors'))
   }
   return (
-    <div className="flex lg:flex-row flex-col bg-blue-400 rounded-3xl mx-20 my-5 lg:h-130 h-auto">
-      <div className="flex flex-col  justify-center gap-4 m-5 py-20 px-10 w-full ">
+    <div className="flex lg:flex-row flex-col bg-blue-500 rounded-3xl lg:mx-30 mx-20 my-5 lg:h-130 h-auto">
+      <div className="flex flex-col  justify-center gap-4 m-5 lg:py-20 py-10 px-10 w-full ">
         <h2 className="text-5xl text-white font-bold ">Book Appointment</h2>
         <h2 className="text-5xl text-white font-bold ">With Trusted Doctors</h2>
         <div className="flex justify-center align-middle my-5">
-          <Link to='/testimonials'>
-          <motion.img whileHover={{ scale: 0.9 }}
-  whileTap={{ scale: 0.95 }} src={assets.logo} alt="image 1" className="w-40 h-20" />
-          </Link>
+          
+          <img src={assets.groupProfiles} alt="group image" className="w-35 h-15" />
+          
 
           <div className=" text-white mx-2 my-3">
             <p >
               Simply browse through our extensive list of trusted doctors,
-              <br />
+
               schdule your appointment hassle-free
             </p>
           </div>
@@ -37,7 +36,7 @@ const Header = () => {
         </motion.button>
       </div>
       <div className="w-full">
-        <img src={assets.logo} alt="image2" className="w-200 lg:h-130 h-auto p-2" />
+        <img src={assets.headerImg} alt="Doctor-image" className="w-200 lg:h-130 h-80 " />
       </div>
     </div>
   );

@@ -12,9 +12,9 @@ const ContactUs = () => {
         
         
         <img
-          src={assets.logo}
+          src={assets.contactImage}
           alt="office"
-          className="w-full md:w-1/3 h-64 md:h-auto object-cover"
+          className="w-full md:w-2/6 h-64 md:h-auto object-cover rounded"
         />
 
         
